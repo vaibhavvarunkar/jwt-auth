@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI = process.env.DB_CONN;
+const dbURI = "process.env.DB_CONN";
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true });
   
 
